@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/js/main.coffee"],"names":["$","document","ready","slick","infinite","slidesToShow","slidesToScroll","dots","speed","arrows","autoplay","autoplaySpeed","prevArrow","nextArrow"],"mappings":"AAAAA,EAAEC,UAAUC,MAAM,WAChBF,EAAE,aAAaG,OACbC,UAAU,EACVC,aAAc,EACdC,eAAgB,EAChBC,MAAM,EACNC,MAAO,IACPC,QAAQ,EACRC,UAAU,EACVC,cAAe,IACfC,UAAW,gEACXC,UAAW"}
