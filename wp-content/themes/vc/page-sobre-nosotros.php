@@ -4,7 +4,7 @@
     $args = array(
       'post_type' => 'banner',
       'order' => 'ASC',
-      'seccion' => 'contacto'
+      'seccion' => 'nosotros'
     );
     $banners = new WP_Query($args);
     if ($banners->posts):
