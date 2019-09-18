@@ -82,7 +82,7 @@
           $postImg = wp_get_attachment_url( get_post_thumbnail_id($postSticky->ID, 'thumbnail') );
         ?>
           <div class="col-md-6 align-self-end">
-            <a href="article.html">
+            <a href="<?php echo $postSticky->guid; ?>">
               <h4><?php echo $postSticky->post_title; ?></h4>
               <p><?php echo $postSticky->post_content; ?></p>
               <span>Seguir leyendo ></span>

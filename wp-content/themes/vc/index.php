@@ -39,16 +39,16 @@
         <?php
           foreach ($saveChilds->posts as $saveChild):
           $childTitle = $saveChild->post_title;
-          $childDesc = $saveChild->post_content;
+          $childExc = $saveChild->post_excerpt;
           $childLink = $saveChild->guid;
           $childlinkText = $saveChild->link;
-          $childImg = wp_get_attachment_url( get_post_thumbnail_id($saveChild->ID, 'full') );
+          $childImg = $saveChild->icono['guid'];
         ?>
           <div class="col">
             <a class="article" href="<?php echo $childLink; ?>">
               <img class="img-fluid" src="<?php echo $childImg; ?>">
               <h3><?php echo $childTitle; ?></h3>
-              <p><?php echo $childDesc; ?></p>
+              <p><?php echo $childExc; ?></p>
               <span><?php echo $childlinkText; ?></span>
             </a>
           </div>
@@ -125,7 +125,7 @@
                 $categoryName = $category->name;
                 $categoryDesc = $category->description;
               ?>
-              <span class="<?php echo $categoryDesc; ?> "><?php echo $categoryName; ?></span>
+              <span class="<?php echo $categoryDesc; ?>"><?php echo $categoryName; ?></span>
               <?php endforeach; ?>
               <h3><?php the_title(); ?></h3>
               <span><?php echo $postDate; ?></span>
@@ -185,10 +185,7 @@
         <div class="col-md-6">
           <div class="form-invitation">
             <h3>Invita a un amigo a unirse a este movimiento.</h3>
-            <input type="text" placeholder="Tu nombre">
-            <input type="text" placeholder="Nombre de tu amigo">
-            <input type="email" placeholder="Correo electrónico de tu amigo">
-            <div class="text-right"><a class="button button-blue" href="#">Enviar</a></div>
+            <?php echo do_shortcode('[contact-form-7 id="7" title="Formulario Home"]'); ?>
           </div>
         </div>
       </div>
