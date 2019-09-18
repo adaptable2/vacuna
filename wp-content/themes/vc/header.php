@@ -17,7 +17,7 @@
   <body>
     <section class="menu fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="home.html"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/brand/logo.png"></a>
+        <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/brand/logo.png"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
           <div class="navbar-collapse collapse" id="navbarNavDropdown">
             <!--ul.navbar-nav.mr-auto
@@ -31,12 +31,12 @@
               a.nav-link(href='#') Pricing
             -->
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link active" href="home.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="article.html">Prevención</a></li>
-              <li class="nav-item"><a class="nav-link" href="article.html">Actualidad</a></li>
-              <li class="nav-item"><i class="material-icons">warning</i><a class="nav-link" href="article.html">Virus al ataque</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
+              <li class="nav-item"><a class="nav-link active" href="<?php echo get_home_url(); ?>">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Prevención</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Actualidad</a></li>
+              <li class="nav-item"><i class="material-icons">warning</i><a class="nav-link" href="#">Virus al ataque</a></li>
+              <li class="nav-item"><a class="nav-link" href="<?php echo get_home_url();?>/sobre-nosotros">Sobre nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="<?php echo get_home_url();?>/contacto">Contáctanos</a></li>
             </ul>
           </div>
         </nav>

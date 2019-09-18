@@ -11,12 +11,12 @@
           </div>
           <div class="col-md-4 col-8 align-self-center">
             <ul>
-              <li><a href="#">Inicio</a></li>
+              <li><a href="<?php echo get_home_url();?>">Inicio</a></li>
               <li><i class="material-icons">warning</i><a href="#">Virus al ataque</a></li>
               <li><a href="#">Prevención</a></li>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Actualidad     </a></li>
-              <li><a href="#">Contáctanos</a></li>
+              <li><a href="<?php echo get_home_url();?>/sobre-nosotros">Sobre nosotros</a></li>
+              <li><a href="#">Actualidad</a></li>
+              <li><a href="<?php echo get_home_url();?>/contacto">Contáctanos</a></li>
             </ul>
           </div>
         </div>
