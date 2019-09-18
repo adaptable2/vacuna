@@ -80,7 +80,7 @@
               foreach ($saveMoms->posts as $saveMom):
               $MomTitle = $saveMom->post_title;
               $MomLink = $saveMom->guid;
-              $MomImg = wp_get_attachment_url( get_post_thumbnail_id($saveMom->ID, 'full') );
+              $MomImg = wp_get_attachment_url( get_post_thumbnail_id($saveMom->ID, 'thumbnail') );
             ?>
               <div class="col">
                 <a class="article" href="<?php echo $MomLink; ?>">
